@@ -1,0 +1,14 @@
+<articles>
+    <article>
+        <name>Gay Quiz TI: What, Why and How?</name>
+        <date>2022-11-5</date>
+        <docname>gay_quiz_ti.md</docname>
+        <!--author>Matthew</author-->
+    </article>
+    <article>
+        <name>My First Article!</name>
+        <date>2022-11-3</date>
+        <docname>my_first_article.md</docname>
+        <!--author>Matthew</author-->
+    </article>
+</articles>
