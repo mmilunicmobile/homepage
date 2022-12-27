@@ -31,7 +31,8 @@
             Websites I've made:
         </h3>
         <ul>
-            <li>temporary lack of stuff</li>
+            <li><a href="http://listr.mathu.ml"></a></li>
+            <li><a href="http://bandquiz.mathu.ml"></a></li>
         </ul>
         <h3>
             Cooler websites I haven't made:
