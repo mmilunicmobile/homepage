@@ -27,12 +27,16 @@
             my other stuff on my [homepage](/)!
             END;
     } else {
-        $my_file = fopen(__DIR__ . "/../articles/" . $meta_article->docname, "r") or die("oops, there was an error 500");
-        $text = fread(
-            $my_file, 
-            filesize(__DIR__ . "/../articles/" . $meta_article->docname)
-        );
-        fclose($my_file);
+        if ($meta_article->python == true) {
+            $text = shell_exec("python3 " . __DIR__ . "/../articles/" . $meta_article->docname); 
+        } else {
+            $my_file = fopen(__DIR__ . "/../articles/" . $meta_article->docname, "r") or die("oops, there was an error 500");
+            $text = fread(
+                $my_file, 
+                filesize(__DIR__ . "/../articles/" . $meta_article->docname)
+            );
+            fclose($my_file);
+        }
     }
     if ($i != 0) {
         $next_link = "/article.php?article=" . $xml->article[$i - 1]->docname;

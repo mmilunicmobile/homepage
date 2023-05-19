@@ -1,5 +1,12 @@
 <articles>
     <article>
+        <name>It Lives! Dynamically generating articles.</name>
+        <date>2023-3-14</date>
+        <docname>dynamic_article.md</docname>
+        <python>true</python>
+        <!--author>Matthew</author-->
+    </article>
+    <article>
         <name>Gay Quiz TI: What, Why and How?</name>
         <date>2022-11-5</date>
         <docname>gay_quiz_ti.md</docname>
