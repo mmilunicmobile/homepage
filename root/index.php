@@ -31,8 +31,8 @@
             Websites I've made:
         </h3>
         <ul>
-            <li><a href="http://listr.mathu.ml">listr.mathu.ml</a></li>
-            <li><a href="http://bandquiz.mathu.ml">bandquiz.mathu.ml</a></li>
+            <li><a href="http://listr.mathuml.mooo.com">listr.mathuml.mooo.com</a></li>
+            <li><a href="http://bandquiz.mathuml.mooo.com">bandquiz.mathuml.mooo.com</a></li>
         </ul>
         <h3>
             Cooler websites I haven't made:

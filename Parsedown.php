@@ -1031,6 +1031,7 @@ class Parsedown
     protected $InlineTypes = array(
         '"' => array('SpecialCharacter'),
         '!' => array('Image'),
+        '?' => array('CenteredImage'),
         '&' => array('SpecialCharacter'),
         '*' => array('Emphasis'),
         ':' => array('Url'),
@@ -1046,7 +1047,7 @@ class Parsedown
 
     # ~
 
-    protected $inlineMarkerList = '!"*_&[:<>`~$\\';
+    protected $inlineMarkerList = '!?"*_&[:<>`~$\\';
 
     #
     # ~
@@ -1276,6 +1277,41 @@ class Parsedown
                 'attributes' => array(
                     'src' => $Link['element']['attributes']['href'],
                     'alt' => $Link['element']['text'],
+                ),
+            ),
+        );
+
+        $Inline['element']['attributes'] += $Link['element']['attributes'];
+
+        unset($Inline['element']['attributes']['href']);
+
+        return $Inline;
+    }
+
+    protected function inlineCenteredImage($Excerpt)
+    {
+        if ( ! isset($Excerpt['text'][1]) or $Excerpt['text'][1] !== '[')
+        {
+            return;
+        }
+
+        $Excerpt['text']= substr($Excerpt['text'], 1);
+
+        $Link = $this->inlineLink($Excerpt);
+
+        if ($Link === null)
+        {
+            return;
+        }
+
+        $Inline = array(
+            'extent' => $Link['extent'] + 1,
+            'element' => array(
+                'name' => 'img',
+                'attributes' => array(
+                    'src' => $Link['element']['attributes']['href'],
+                    'alt' => $Link['element']['text'],
+                    'style' => "display: block;margin-left: auto;margin-right: auto;"
                 ),
             ),
         );

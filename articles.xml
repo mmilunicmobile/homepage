@@ -1,11 +1,10 @@
 <articles>
-    <article>
+<!--<article>
         <name>It Lives! Dynamically generating articles.</name>
-        <date>2023-3-14</date>
+        <date>2023-9-4</date>
         <docname>dynamic_article.md</docname>
         <python>true</python>
-        <!--author>Matthew</author-->
-    </article>
+    </article>-->
     <article>
         <name>Gay Quiz TI: What, Why and How?</name>
         <date>2022-11-5</date>
