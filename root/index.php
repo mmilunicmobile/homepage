@@ -40,6 +40,7 @@
         <ul>
             <li><a href="https://www.falstad.com/">falstad.com</a></li>
             <li><a href="http://www.gregory-bard.com/">gregory-bard.com</a></li>
+            <li><a href="https://www.integral-calculator.com/">integral-calculator.com</a></li>
         </ul>
         <p>
             This is an afternote, but this website was heavily inspired by the lack of a framework 
