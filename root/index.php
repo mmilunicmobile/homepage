@@ -41,6 +41,8 @@
             <li><a href="https://www.falstad.com/">falstad.com</a></li>
             <li><a href="http://www.gregory-bard.com/">gregory-bard.com</a></li>
             <li><a href="https://www.integral-calculator.com/">integral-calculator.com</a></li>
+            <li><a href="https://www.antenna-theory.com/">antenna-theory.com</a></li>
+            <li><a href="https://tutorial.math.lamar.edu/">tutorial.math.lamar.edu</a></li>
         </ul>
         <p>
             This is an afternote, but this website was heavily inspired by the lack of a framework 
